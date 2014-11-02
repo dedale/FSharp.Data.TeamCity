@@ -4,19 +4,19 @@
 // --------------------------------------------------------------------------------------
 
 // Binaries that have XML documentation (in a corresponding generated XML file)
-let referenceBinaries = [ "##ProjectName##.dll" ]
+let referenceBinaries = [ "FSharp.Data.TeamCity.dll" ]
 // Web site location for the generated documentation
-let website = "/##ProjectName##"
+let website = "/FSharp.Data.TeamCity"
 
-let githubLink = "http://github.com/##GitHome##/##GitName##"
+let githubLink = "http://github.com/dedale/FSharp.Data.TeamCity"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "##ProjectName##"
-    "project-author", "##Author##"
-    "project-summary", "##Summary##"
+  [ "project-name", "FSharp.Data.TeamCity"
+    "project-author", "Vianney PHILIPPE"
+    "project-summary", "TeamCity Type Provider"
     "project-github", githubLink
-    "project-nuget", "http://nuget.org/packages/##ProjectName##" ]
+    "project-nuget", "http://nuget.org/packages/FSharp.Data.TeamCity" ]
 
 // --------------------------------------------------------------------------------------
 // For typical project, no changes are needed below

@@ -1,6 +1,6 @@
-﻿module FSharp.ProjectScaffold.Tests
+module FSharp.Data.TeamCity.Tests
 
-open FSharp.ProjectTemplate
+open FSharp.Data.TeamCity
 open NUnit.Framework
 
 [<Test>]
