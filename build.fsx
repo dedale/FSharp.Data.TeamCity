@@ -32,7 +32,7 @@ let project = "FSharp.Data.TeamCity"
 
 // Short summary of the project
 // (used as description in AssemblyInfo and as a short summary for NuGet package)
-let summary = "TeamCity Type Provider"
+let summary = "Library of F# type providers for TeamCity"
 
 // Longer description of the project
 // (used as a description for NuGet package; line breaks are automatically cleaned up)

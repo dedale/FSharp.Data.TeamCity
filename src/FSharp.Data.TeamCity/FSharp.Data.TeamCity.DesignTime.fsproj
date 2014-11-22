@@ -5,13 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>92c53989-5cab-4827-97a8-ea641453a16b</ProjectGuid>
+    <ProjectGuid>06bc8f56-8190-48e3-b488-e0aed42601f9</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>FSharp.Data.TeamCity</RootNamespace>
-    <AssemblyName>FSharp.Data.TeamCity</AssemblyName>
+    <RootNamespace>FSharp.Data.TeamCity.DesignTime</RootNamespace>
+    <AssemblyName>FSharp.Data.TeamCity.DesignTime</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
-    <Name>FSharp.Data.TeamCity</Name>
+    <Name>FSharp.Data.TeamCity.DesignTime</Name>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -22,7 +22,7 @@
     <OutputPath>..\..\bin</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>5</WarningLevel>
-    <DocumentationFile>..\..\bin\FSharp.Data.TeamCity.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\FSharp.Data.TeamCity.DesignTime.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
@@ -33,7 +33,7 @@
     <OutputPath>..\..\bin</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>5</WarningLevel>
-    <DocumentationFile>..\..\bin\FSharp.Data.TeamCity.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\FSharp.Data.TeamCity.DesignTime.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
@@ -49,7 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TeamCityRuntime.fs" />
-    <Compile Include="Runtime.fs" />
+    <Compile Include="TeamCityProvider.fs" />
     <Compile Include="AssemblyInfo.fs" />
     <None Include="paket.references" />
   </ItemGroup>
@@ -88,6 +88,10 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
+            </Reference>
             <Reference Include="Zlib.Portable">
               <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
               <Private>True</Private>
@@ -118,6 +122,10 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\portable-net40+sl5+wp8+win8\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
+            </Reference>
           </ItemGroup>
         </When>
         <Otherwise>
@@ -126,6 +134,10 @@
               <HintPath>..\..\packages\FSharp.Data\lib\portable-net40+sl5+wp8+win8\FSharp.Data.dll</HintPath>
               <Private>True</Private>
               <Paket>True</Paket>
+            </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\portable-net40+sl5+wp8+win8\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
             </Reference>
             <Reference Include="Zlib.Portable">
               <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
@@ -143,6 +155,10 @@
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
+        <Reference Include="FSharp.Data.DesignTime">
+          <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.DesignTime.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="Zlib.Portable">
           <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
           <Private>True</Private>
@@ -159,6 +175,10 @@
           <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
+        </Reference>
+        <Reference Include="FSharp.Data.DesignTime">
+          <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.DesignTime.dll</HintPath>
+          <Private>True</Private>
         </Reference>
         <Reference Include="Zlib.Portable">
           <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
@@ -179,6 +199,10 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
+            </Reference>
             <Reference Include="Zlib.Portable">
               <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
               <Private>True</Private>
@@ -196,6 +220,10 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
+            </Reference>
             <Reference Include="Zlib.Portable">
               <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
               <Private>True</Private>
@@ -213,6 +241,10 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\portable-net40+sl5+wp8+win8\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
+            </Reference>
             <Reference Include="Zlib.Portable">
               <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
               <Private>True</Private>
@@ -228,6 +260,10 @@
           <HintPath>..\..\packages\FSharp.Data\lib\portable-net40+sl5+wp8+win8\FSharp.Data.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
+        </Reference>
+        <Reference Include="FSharp.Data.DesignTime">
+          <HintPath>..\..\packages\FSharp.Data\lib\portable-net40+sl5+wp8+win8\FSharp.Data.DesignTime.dll</HintPath>
+          <Private>True</Private>
         </Reference>
         <Reference Include="Zlib.Portable">
           <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
@@ -245,6 +281,10 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\portable-net40+sl5+wp8+win8\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
+            </Reference>
             <Reference Include="Zlib.Portable">
               <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
               <Private>True</Private>
@@ -258,6 +298,10 @@
               <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.dll</HintPath>
               <Private>True</Private>
               <Paket>True</Paket>
+            </Reference>
+            <Reference Include="FSharp.Data.DesignTime">
+              <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.DesignTime.dll</HintPath>
+              <Private>True</Private>
             </Reference>
             <Reference Include="Zlib.Portable">
               <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
@@ -277,6 +321,10 @@
           <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
+        </Reference>
+        <Reference Include="FSharp.Data.DesignTime">
+          <HintPath>..\..\packages\FSharp.Data\lib\net40\FSharp.Data.DesignTime.dll</HintPath>
+          <Private>True</Private>
         </Reference>
         <Reference Include="Zlib.Portable">
           <HintPath>..\..\packages\Zlib.Portable\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>

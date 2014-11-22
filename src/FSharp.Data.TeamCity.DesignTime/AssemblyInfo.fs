@@ -1,7 +1,7 @@
 ﻿namespace System
 open System.Reflection
 
-[<assembly: AssemblyTitleAttribute("FSharp.Data.TeamCity")>]
+[<assembly: AssemblyTitleAttribute("FSharp.Data.TeamCity.DesignTime")>]
 [<assembly: AssemblyProductAttribute("FSharp.Data.TeamCity")>]
 [<assembly: AssemblyDescriptionAttribute("Library of F# type providers for TeamCity")>]
 [<assembly: AssemblyVersionAttribute("0.1.0.0")>]
